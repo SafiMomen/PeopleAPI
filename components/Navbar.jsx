@@ -8,7 +8,7 @@ import { SiTailwindcss } from 'react-icons/si';
 import { AiFillApi } from 'react-icons/ai'
 import { BsWrenchAdjustableCircleFill } from 'react-icons/bs';
 
-export default () => {
+let Navbar = () => {
   return (
     <div className="px-[50px] py-[50px] bg-slate-900 font-kanit">
         <div className="py-3 flex justify-left items-center">
@@ -38,3 +38,5 @@ export default () => {
     </div>
   )
 }
+
+export default Navbar;

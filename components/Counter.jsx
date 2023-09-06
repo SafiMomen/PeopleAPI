@@ -5,7 +5,7 @@ import React from 'react'
 import { BiSolidLeftArrow, BiSolidRightArrow } from 'react-icons/bi';
 import { IconContext } from 'react-icons'; 
 
-export default ({counterState}) => {
+let Counter =  ({counterState}) => {
     let [counter, setCounter] = counterState;
 
     let updateCounter = (amount) => {
@@ -26,3 +26,5 @@ export default ({counterState}) => {
         </div>
     )
 }
+
+export default Counter;

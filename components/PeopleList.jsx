@@ -11,7 +11,7 @@ import APIData from '@/utils/APIData';
 
 preload(APIData.fetchPeopleURL, APIData.fetchPeople);
 
-export default function({amount}) {
+let PeopelList = ({amount}) => {
     const { data, isLoading, isValidating, error } = useSWR(
         APIData.fetchPeopleURL,
         APIData.fetchPeople,
@@ -35,3 +35,5 @@ export default function({amount}) {
         </div>
     );
 }
+
+export default PeopleList;

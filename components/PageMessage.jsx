@@ -2,7 +2,7 @@ import React from 'react'
 import {IconContext} from 'react-icons';
 
 export default function PageMessage({color, size, children}) {
-return (<div className="h-[550px] flex justify-center items-center">
+return (<div className="h-[650px] flex justify-center items-center">
     <IconContext.Provider value={{ color: color, size: size }}>
         <div className="flex justify-center items-center flex-col">
             {children}

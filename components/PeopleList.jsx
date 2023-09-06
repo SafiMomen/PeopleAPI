@@ -35,5 +35,3 @@ export default function PeopleList({amount}) {
         </div>
     );
 }
-
-export default PeopleList;

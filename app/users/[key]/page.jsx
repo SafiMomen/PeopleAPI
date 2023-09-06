@@ -13,7 +13,7 @@ import PageError from '@/components/PageError';
 import { TiWarning } from 'react-icons/ti';
 import { BiSolidLeftArrow, BiSolidRightArrow } from 'react-icons/bi';
 
-export default function users({params}) {
+export default function Users({params}) {
     const { data, isLoading, isValidating, error } = useSWR(
         APIData.fetchPeopleURL,
         APIData.fetchPeople,

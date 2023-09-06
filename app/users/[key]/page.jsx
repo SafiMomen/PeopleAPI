@@ -58,7 +58,7 @@ export default function Users({params}) {
 
         <div className='grid grid-cols-1 lg:grid-cols-3 gap-3 text-center mt-[100px]'>
             <div className='bg-slate-900 py-[50px] rounded-lg flex flex-col justify-center items-center'>
-                <h2 className="text-3xl">
+                <h2 className="text-2xl md:text-3xl">
                     {name.title}. {name.first} {name.last}
                 </h2>
 
@@ -69,13 +69,13 @@ export default function Users({params}) {
             </div>
 
             <div className='bg-slate-900 py-[50px] rounded-lg flex flex-col justify-center items-center'>
-                <h2 className="text-3xl">Username: {login.username}</h2>
+                <h2 className="text-2xl md:text-3xl">Username: {login.username}</h2>
                 <h2 className="text-xl">Password: {login.password}</h2>
                 <h2 className="text-xl">Account created: {registered.date.substring(0, 10)}</h2>
             </div>
 
             <div className='bg-slate-900 py-[50px] rounded-lg flex flex-col justify-center items-center'>
-                <h2 className="text-3xl">
+                <h2 className="text-2xl md:text-3xl">
                     {email}
                 </h2>
 
@@ -87,14 +87,14 @@ export default function Users({params}) {
             </div>
         </div>
 
-        <div className="bg-gradient-to-b from-slate-800 to-slate-900 p-5 rounded-lg mt-[100px] flex justify-around items-center">
+        <div className="bg-gradient-to-b from-slate-800 to-slate-900 p-5 rounded-lg mt-[100px] flex-col md:flex-row flex justify-around items-center">
             <IconContext.Provider value={{ color: 'white', size: '7em' }}>
                 <TiWarning className='mx-12'/>
             </IconContext.Provider>
             
-            <div>
-                <h3 className="text-3xl">WARNING: These data are for mocking purposes, these credentials will not work.</h3>
-                <p>Facts and information at this website are believed to be completely false. Changes may be made at any time without prior notice. All data provided on this website is to be used for mock-data purposes only. The information contained on this website and pages within, is not intended to provide specific legal, financial or tax advice, or any other advice, whatsoever, for any individual or company and should not be relied upon in that regard. </p>
+            <div className='text-center md:text-left'>
+                <h3 className="text-2xl md:text-3xl py-5 md:py-0">WARNING: These data are for mocking purposes, these credentials will not work.</h3>
+                <p className="pb-3 md:pb-0">Facts and information at this website are believed to be completely false. Changes may be made at any time without prior notice. All data provided on this website is to be used for mock-data purposes only. The information contained on this website and pages within, is not intended to provide specific legal, financial or tax advice, or any other advice, whatsoever, for any individual or company and should not be relied upon in that regard. </p>
             </div>
         </div>
     </main>

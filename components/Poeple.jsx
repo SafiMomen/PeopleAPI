@@ -18,7 +18,7 @@ export default function People({person, id})  {
             />
 
             <div className="font-kanit pt-[40px] pb-2 flex flex-col justify-center items-center">
-                <h3 className="text-xl font-bold mt-3">{name.title}. {name.first} {name.last}</h3>
+                <h3 className="lg:text-lg md:tp-5 xl:text-xl font-bold mt-3">{name.title}. {name.first} {name.last}</h3>
                 <h3>{email}</h3>
                 <h3>{location.country}</h3>
 

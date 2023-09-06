@@ -28,7 +28,7 @@ export default function PeopleList({amount}) {
     if (!data || !data.results) return (<PageError>TOO MANY REQUESTS</PageError>);
 
     return (
-        <div className="grid grid-cols-5 gap-4 px-10">
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4 px-10">
             {data.results.slice(0, amount).map((person, key) => {
                 return <People key={key} id={key} person={person}/>
             })}

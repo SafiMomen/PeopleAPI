@@ -12,15 +12,13 @@ export default function Home() {
 
   return (
     <main className="pb-[100px]">
-      <div className="flex justify-between items-center">
-        <h2 className="text-white text-5xl pl-[50px] py-[50px] font-kanit">
-          Generated {peopleAmount} {peopleAmount > 1 ? "people" : "person"}
-        </h2>
+      <h2 className="text-white text-5xl pl-[50px] py-[50px] font-kanit">
+        Generated {peopleAmount} {peopleAmount > 1 ? "people" : "person"}
+      </h2>
 
-        <div className='flex justify-between items-center w-1/6'>
+      <div className="flex justify-between items-center">
           <Refresh/>
           <Counter counterState={[peopleAmount, setPeopleAmount]}/>
-        </div>
       </div>
 
       <PeopleList amount={peopleAmount}/>

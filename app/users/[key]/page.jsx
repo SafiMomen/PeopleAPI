@@ -56,7 +56,7 @@ export default function Users({params}) {
             </IconContext.Provider>
         </div>
 
-        <div className='grid grid-cols-3 gap-3 text-center mt-[100px]'>
+        <div className='grid grid-cols-1 lg:grid-cols-3 gap-3 text-center mt-[100px]'>
             <div className='bg-slate-900 py-[50px] rounded-lg flex flex-col justify-center items-center'>
                 <h2 className="text-3xl">
                     {name.title}. {name.first} {name.last}

@@ -8,7 +8,7 @@ import { TbRefresh } from 'react-icons/tb';
 
 import APIData from '@/utils/APIData'; 
 
-const Refresh = () => {
+export default function Refresh() {
     let [lastClicked, setLastClicked] = useState(Date.now());
     let [timeRemaining, setTimeRemaining] = useState(0);
 
@@ -52,5 +52,3 @@ const Refresh = () => {
         </IconContext.Provider>
     )
 }
-
-export default Refresh

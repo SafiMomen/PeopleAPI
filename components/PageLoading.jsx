@@ -4,7 +4,7 @@ import PageMessage from './PageMessage'
 
 import {FaTruckLoading} from 'react-icons/fa'
 
-const PageLoading = () => {
+export default function PageLoading() {
   return (
     <PageMessage color="white" size="3em">
         <FaTruckLoading/>
@@ -12,5 +12,3 @@ const PageLoading = () => {
     </PageMessage>
   )
 }
-
-export default PageLoading

@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image';
 import Link from 'next/link';
 
-let People = ({person, id}) => {
+export default function People({person, id})  {
     let {picture, name, email, location} = person;
 
     return (
@@ -30,5 +30,3 @@ let People = ({person, id}) => {
         </div>
     )
 }
-
-export default People;

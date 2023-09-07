@@ -40,7 +40,7 @@ export default function Refresh() {
 
     return (
         <IconContext.Provider value={{ color: "white", className: "global-class-name", size: "2em" }}>
-            <div className="flex flex-col justify-center items-center pt-3 pl-[50px]">
+            <div className="flex flex-col justify-center items-center pt-3">
                 <button onClick={handleRefresh}>
                     <TbRefresh className='hover:rotate-180 ease-linear duration-300'/>
                 </button>

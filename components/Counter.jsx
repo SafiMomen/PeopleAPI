@@ -14,7 +14,7 @@ export default function Counter({counterState}) {
     }
 
     return (
-        <div className="pr-[60px]">
+        <div>
             <IconContext.Provider value={{ color: "white", className: "global-class-name", size: "2em" }}>
                 <button onClick={() => updateCounter(counter - 1)}>
                     <BiSolidLeftArrow/>

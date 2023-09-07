@@ -16,9 +16,9 @@ export default function Home() {
         Generated {peopleAmount} {peopleAmount > 1 ? "people" : "person"}
       </h2>
 
-      <div className="flex justify-between items-center">
-          <Refresh/>
+      <div className="flex justify-between items-center px-[65px] py-3">
           <Counter counterState={[peopleAmount, setPeopleAmount]}/>
+          <Refresh/>
       </div>
 
       <PeopleList amount={peopleAmount}/>
